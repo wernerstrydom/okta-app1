@@ -4,7 +4,7 @@ cat > backend.tf << EOL
 terraform {
   backend "s3" {
     bucket         = "${TF_BACKEND_S3_BUCKET}"
-    key            = "okta-entitlements/v1.0.0/terraform.tfstate"
+    key            = "okta-app1/v1.0.0/terraform.tfstate"
     region         = "${TF_BACKEND_S3_REGION}"
     dynamodb_table = "${TF_BACKEND_S3_DYNAMODB_TABLE}"
     encrypt        = true
